@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Irene Household Collections — Order Online</title>
+<meta name="description" content="Turkey bubble & Jacquard seat covers, duvets, mattress protectors and Airbnb essentials in Nairobi. Order online in under a minute.">
+<meta name="theme-color" content="#5e1026">
+<meta property="og:title" content="Irene Household Collections — Order Online">
+<meta property="og:description" content="Seat covers from KES 800. Duvets, mattress protectors & BnB essentials. Order in under a minute.">
+<meta property="og:image" content="img/bubble-blue.webp">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 32 32%27%3E%3Crect width=%2732%27 height=%2732%27 rx=%278%27 fill=%27%235e1026%27/%3E%3Ctext x=%2716%27 y=%2721%27 font-size=%2713%27 text-anchor=%27middle%27 fill=%27%23f6e7bf%27 font-family=%27Georgia%27 font-weight=%27700%27%3EIH%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="nav" id="top">
+  <div class="wrap nav__inner">
+    <a href="#top" class="brand" aria-label="Irene Household Collections home">
+      <span class="brand__mark">IH</span>
+      <span class="brand__text">Irene Household<small>Collections</small></span>
+    </a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#seat-covers">Seat covers</a>
+      <a href="#bnb">BnB essentials</a>
+      <a href="#order">Order</a>
+    </nav>
+    <a href="#order" class="cart-pill" aria-label="View your order">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M6 6 5 3H2"/></svg>
+      <span data-cart-count>0</span>
+    </a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="wrap hero__grid">
+      <div class="hero__copy">
+        <p class="eyebrow reveal">Nairobi · Home &amp; BnB essentials</p>
+        <h1 class="reveal">Give your home a <em>brand-new look</em> — without buying new furniture.</h1>
+        <p class="lead reveal">Stretch-fit Turkey bubble &amp; Jacquard seat covers from <strong>KES 800</strong>, plus hotel-quality duvets, protectors and bedding for homes and Airbnbs.</p>
+        <div class="hero__cta reveal">
+          <a href="#seat-covers" class="btn btn--primary">Shop seat covers</a>
+          <a href="#bnb" class="btn btn--ghost">BnB essentials</a>
+        </div>
+        <ul class="trust reveal" aria-label="Why customers order from us">
+          <li><b>Stretch-fit</b> fits most sofas</li>
+          <li><b>Washable</b> &amp; long lasting</li>
+          <li><b>Order in 60s</b> — we confirm by phone</li>
+        </ul>
+      </div>
+      <div class="hero__visual reveal">
+        <div class="hero__card hero__card--main"><img src="img/bubble-blue.webp" alt="Royal blue Turkey bubble seat cover on a 3-seater sofa" width="989" height="1000" fetchpriority="high"></div>
+        <div class="hero__card hero__card--float"><img src="img/jacquard-maroon.webp" alt="Maroon Jacquard seat cover set" width="1000" height="753" loading="lazy"></div>
+        <div class="hero__badge"><span>Sale</span><strong>from KES 800</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SEAT COVERS -->
+  <section class="section" id="seat-covers">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <p class="eyebrow">Seat cover sale</p>
+        <h2>Turkey Bubble &amp; Jacquard Seat Covers</h2>
+        <p class="muted">Choose a style, pick your colour, select your sofa size. Same sale price for both styles.</p>
+      </div>
+
+      <div class="configurator reveal">
+        <div class="configurator__media">
+          <img id="sc-image" src="img/bubble-blue.webp" alt="Selected seat cover" width="989" height="1000">
+          <span class="tag" id="sc-tag">Turkey Bubble · Navy Blue</span>
+        </div>
+
+        <div class="configurator__panel">
+          <fieldset class="field">
+            <legend>1. Style</legend>
+            <div class="seg" role="radiogroup" id="sc-style"></div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>2. Colour <span class="muted" id="sc-colour-name"></span></legend>
+            <div class="swatches" role="radiogroup" id="sc-colours"></div>
+          </fieldset>
+
+          <fieldset class="field">
+            <legend>3. Sofa size</legend>
+            <div class="sizes" role="radiogroup" id="sc-sizes"></div>
+          </fieldset>
+
+          <div class="field field--row">
+            <div class="qty" aria-label="Quantity">
+              <button type="button" data-qty="-1" aria-label="Decrease">−</button>
+              <output id="sc-qty">1</output>
+              <button type="button" data-qty="1" aria-label="Increase">+</button>
+            </div>
+            <div class="price-block">
+              <span class="price" id="sc-price">KES 2,200</span>
+              <span class="was" id="sc-was">KES 2,500</span>
+            </div>
+          </div>
+
+          <button type="button" class="btn btn--primary btn--block" id="sc-add">Add to order</button>
+          <p class="fine">Not sure which size? Count the seats in your sofa set — e.g. 3+1+1 = 5 seater.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BNB -->
+  <section class="section section--alt" id="bnb">
+    <div class="wrap">
+      <div class="section__head reveal">
+        <p class="eyebrow">Airbnb · Hotel · Home</p>
+        <h2>BnB Essentials</h2>
+        <p class="muted">Hotel-quality bedding and bathroom basics — everything to get a room guest-ready.</p>
+      </div>
+      <div class="grid" id="bnb-grid"></div>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section class="section" id="order">
+    <div class="wrap order">
+      <div class="order__summary reveal">
+        <p class="eyebrow">Your order</p>
+        <h2>Order summary</h2>
+        <ul class="cart" id="cart"></ul>
+        <p class="cart-empty" id="cart-empty">Your order is empty. Add seat covers or BnB items above.</p>
+        <div class="cart-total" id="cart-total-row" hidden>
+          <span>Total (excl. delivery)</span>
+          <strong id="cart-total">KES 0</strong>
+        </div>
+        <p class="fine">Delivery cost is confirmed when we call you. You pay on confirmation.</p>
+      </div>
+
+      <form class="order__form reveal" id="order-form" novalidate>
+        <h3>Your details</h3>
+        <label>Full name<input name="name" autocomplete="name" required placeholder="e.g. Jane Wanjiku"></label>
+        <label>Phone number<input name="phone" type="tel" autocomplete="tel" required inputmode="tel" placeholder="07XX XXX XXX" pattern="^(\+?254|0)[17]\d{8}$"></label>
+        <label>Email <span class="muted">(optional)</span><input name="email" type="email" autocomplete="email" placeholder="you@example.com"></label>
+        <label>Delivery location<input name="location" required autocomplete="street-address" placeholder="Estate, area & town — e.g. Kilimani, Nairobi"></label>
+        <label>Notes <span class="muted">(optional)</span><textarea name="notes" rows="3" placeholder="Preferred delivery time, landmarks, other colours…"></textarea></label>
+        <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <button class="btn btn--primary btn--block" type="submit" id="submit-btn">Place order</button>
+        <p class="form-msg" id="form-msg" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section--alt">
+    <div class="wrap faq reveal">
+      <h2>Questions</h2>
+      <details><summary>Will the seat cover fit my sofa?</summary><p>Yes — both Turkey bubble and Jacquard covers are stretch-fit with elastic, so they fit most standard sofas and armchairs.</p></details>
+      <details><summary>How do I pay?</summary><p>After you place your order we call you to confirm the items and delivery, then you pay via M-Pesa.</p></details>
+      <details><summary>Can I order for my Airbnb in bulk?</summary><p>Yes. Add everything you need and mention the number of rooms in the notes — we'll call you with the best offer.</p></details>
+      <details><summary>Can I wash them?</summary><p>Yes, all seat covers, duvet covers and protectors are machine washable.</p></details>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <div>
+      <span class="brand__mark">IH</span>
+      <p><strong>Irene Household Collections</strong><br>Style · Comfort · A better home</p>
+    </div>
+    <div class="footer__links">
+      <a href="https://irenehousehold.co.ke" rel="noopener">irenehousehold.co.ke</a>
+      <a href="tel:+254716060029">0716 060 029</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<a href="#order" class="sticky-cta" id="sticky-cta" hidden>View order · <span data-cart-total>KES 0</span></a>
+
+<script src="config.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
